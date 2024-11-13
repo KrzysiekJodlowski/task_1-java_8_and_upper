@@ -4,24 +4,24 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class Subscription {
-    private String bankcard;
+    private String bankCard;
     private LocalDate startDate;
 
     public Subscription(String bankcard, LocalDate startDate) {
-        this.bankcard = bankcard;
+        this.bankCard = bankcard;
         this.startDate = startDate;
     }
 
     public String getBankcard() {
-        return bankcard;
+        return bankCard;
     }
 
     public LocalDate getStartDate() {
         return startDate;
     }
 
-    public void setBankcard(String bankcard) {
-        this.bankcard = bankcard;
+    public void setBankcard(String bankCard) {
+        this.bankCard = bankCard;
     }
 
     public void setStartDate(LocalDate startDate) {
@@ -33,18 +33,19 @@ public class Subscription {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Subscription that = (Subscription) o;
-        return Objects.equals(bankcard, that.bankcard) && Objects.equals(startDate, that.startDate);
+
+        return Objects.equals(bankCard, that.bankCard) && Objects.equals(startDate, that.startDate);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(bankcard, startDate);
+        return Objects.hash(bankCard, startDate);
     }
 
     @Override
     public String toString() {
         return "Subscription{" +
-                "bankcard='" + bankcard + '\'' +
+                "bankcard='" + bankCard + '\'' +
                 ", startDate=" + startDate +
                 '}';
     }

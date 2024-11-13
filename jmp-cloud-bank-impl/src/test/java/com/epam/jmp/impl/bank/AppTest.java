@@ -1,4 +1,4 @@
-package com.epam.jmp;
+package com.epam.jmp.impl.bank;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
